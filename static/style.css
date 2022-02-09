@@ -1,0 +1,36 @@
+.container-nav {
+    background-color: lightgrey;
+}
+
+.navbar-brand {
+    color: darkslategray;
+    
+}
+
+.nav-links {
+    margin-right: 1rem;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: darkslategray;
+}
+
+.create-post-link {
+    text-decoration: none;
+    color: darkred;
+    margin-right: 1rem;
+}
+
+.post_image {
+	width: 450px;
+	height: 300px;
+	border-radius: 10px;
+	margin-bottom: 10px;
+}
+
+.feed_button {
+    border-color: lightslategray;
+    background-color: transparent;
+    margin-left: 5rem;
+}

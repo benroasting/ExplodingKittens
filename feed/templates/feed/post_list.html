@@ -1,0 +1,20 @@
+{% extends 'landing/base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+    {% for post in post_list %}
+    <div class="row justify-content-center mt-3">
+        <div class="col-md-5 col-sm-12 border-bottom position-relative">
+            {% if post.image %}
+                <img src="{{ post.image.url }}" class="post_image"/>
+            {% endif%}
+            <p><strong>{{ post.author }}</strong> {{ post.created_on }}</p>
+            <p><strong>{{ post.title }}</strong></p>
+            <p>{{ post.body }}</p>
+            <a href="{% url 'post_details' post.pk %}" class="stretched-link"></a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock content %}
